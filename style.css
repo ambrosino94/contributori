@@ -1,22 +1,98 @@
+:root {
+  --step--2: clamp(0.67rem, calc(0.83rem + -0.22vw), 0.78rem);
+  --step--1: clamp(0.94rem, calc(0.88rem + 0.28vw), 1.08rem);
+  --step-0: clamp(1.13rem, calc(0.88rem + 1.22vw), 1.75rem);
+  --step-1: clamp(1.35rem, calc(0.77rem + 2.89vw), 2.83rem);
+  --step-2: clamp(1.62rem, calc(0.46rem + 5.78vw), 4.58rem);
+  --step-3: clamp(1.94rem, calc(-0.19rem + 10.67vw), 7.41rem);
+  --step-4: clamp(2.33rem, calc(-1.44rem + 18.85vw), 11.99rem);
+  --step-5: clamp(2.80rem, calc(-3.68rem + 32.40vw), 19.41rem);
+}
+
 body {
   background: url("Assets/images/rockywall.png") repeat;
-  font-size: 35px;
+  font-size: var(--step-0);
 }
+
+header{
+  font-family: Palatino Linotype;
+  font-style: normal;
+  font-weight: 400;
+  font-size: var(--step-1);
+  border: 2px solid red;
+  margin: 0 auto;
+  padding: 0 1em;
+  max-width: 60rem ;
+  min-height: 200px;
+}
+
 h1{
   text-align: center;
   font-style: normal;
+  line-height: 1;
 }
 
-  * {
-    margin: 0;
-    padding: 0;
-  }
+* {
+  margin: 0;
+  padding: 0;
+}
 
-  html,
-  body {
-    width: 100%;
-    height: 100%;
-  }
+html,
+body {
+  width: 100%;
+  height: 100%;
+}
+
+.container {
+  margin-inline: auto;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr;
+  gap: 0px 0px;
+  grid-auto-flow: row;
+  border: 2px solid red;
+}
+
+.contPhoto{
+  width:100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.Pic {
+  margin-inline: auto;
+  display: grid;
+  grid-template-columns: 0.66666667fr 1fr;
+  grid-template-rows: 1fr;
+  gap: 0px 0px;
+  grid-auto-flow: row;
+  grid-template-areas:
+    ". Content";
+  grid-area: 1 / 1 / 2 / 2;
+  border: 2px solid green;
+}
+
+.Content {
+
+  border: 2px solid blue;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  gap: 0px 0px;
+  grid-auto-flow: row;
+  grid-template-areas:
+    "Names"
+    "Birth"
+    "Death";
+  grid-area: Content;
+}
+
+.Names { grid-area: Names; }
+
+.Birth { grid-area: Birth; }
+
+.Death { grid-area: Death; }
+
 
 
 
