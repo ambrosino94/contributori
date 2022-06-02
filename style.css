@@ -21,8 +21,7 @@ header{
   font-style: normal;
   font-weight: 400;
   font-size: var(--step-1);
-  border: 2px solid red;
-  margin: 0 auto;
+  margin: 2% 0 auto;
   padding: 0 1em;
   max-width: 60rem ;
   min-height: 200px;
@@ -47,64 +46,14 @@ body {
 
   #mainframe{
     margin-inline: auto;
-    /* width: 80%; */
-    min-width: 300px;
+    width: 80%;
+    /* min-width: 300px; */
   }
 
-.container {
-  margin-inline: auto;
-  display: grid;
-  grid-template-columns: 1fr;
-  grid-template-rows: 1fr;
-  gap: 0px 0px;
-  grid-auto-flow: row;
-  border: 2px solid red;
-}
-
-.contPhoto{
-  width:100%;
-  height: 100%;
-  object-fit: cover;
-}
-
-.Pic {
-  margin-inline: auto;
-  display: grid;
-  grid-template-columns: 0.66666667fr 1fr;
-  grid-template-rows: 1fr;
-  gap: 0px 0px;
-  grid-auto-flow: row;
-  grid-template-areas:
-    ". Content";
-  grid-area: 1 / 1 / 2 / 2;
-  border: 2px solid green;
-}
-
-.Content {
-
-  border: 2px solid blue;
-  display: grid;
-  grid-template-columns: 1fr;
-  grid-template-rows: 1fr 1fr 1fr;
-  gap: 0px 0px;
-  grid-auto-flow: row;
-  grid-template-areas:
-    "Names"
-    "Birth"
-    "Death";
-  grid-area: Content;
-}
-
-.Names { grid-area: Names; }
-
-.Birth { grid-area: Birth; }
-
-.Death { grid-area: Death; }
 
 /* Test START Test START Test START Test START Test START Test START */
   .card{
-    margin: 0;
-    margin-bottom: 10px;
+    margin: 6% 0;
     display: flex;
     align-items: center;
     position: relative;
@@ -140,8 +89,28 @@ body {
   .card-info{
     font-size: var(--step-1);
   }
+
+  .plates{
+    display: grid;
+    justify-content: space-around;
+  }
+
+  .first-plate{
+    width: 20%;
+    height: 20%;
+    display: block;
+  }
+
+  .second-plate{
+    width: 20%;
+    height: 20%;
+    display: block;
+  }
 /* Test END Test END Test END Test END Test END Test END Test END Test END */
 
+/* query */
+/* .card display from flex to block */
+/* figcaption add margin-inline and display table */
 
   /* not in use */
   #constructionWrapper {
@@ -154,7 +123,6 @@ body {
       text-align: center;
       color: #161719;
     }
-
 
 
     #typed-wrapper {
