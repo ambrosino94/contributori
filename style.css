@@ -79,11 +79,13 @@ background: linear-gradient(159.18deg, rgba(228, 228, 228, 0.1) -39.36%, #333333
 /* Test START Test START Test START Test START Test START Test START */
   .card{
     margin: 6% 0;
-    display: flex;
+    display: -webkit-box;
     align-items: center;
     position: relative;
     text-decoration: none;
-    left: calc(30% - (100vmax - 92vw));
+    /* left: calc(30% - (100vmax - 92vw)); */
+    left: 20%;
+    /* margin-right: 20%; */
   }
 
   #birth::before{
@@ -202,7 +204,7 @@ footer a:visited{
 .authors{
   padding-top: 5px;
 }
-@media only screen and (max-width: 340px) {
+@media screen and (max-width: 440px) {
   .card {
     display: block;
   }
@@ -219,7 +221,7 @@ footer a:visited{
     }
 }
 
-@media only screen and (max-width: 600px) {
+@media screen and (max-width: 600px) {
   .card {
     left: 0%;
   }
