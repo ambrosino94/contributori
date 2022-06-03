@@ -25,10 +25,12 @@ header{
   font-style: normal;
   font-weight: 400;
   font-size: var(--step-1);
-  margin: 2% 0 auto;
+  /* margin: 2% 0 auto; */
   padding: 0 1em;
-  max-width: 60rem ;
   min-height: 200px;
+  display: flex;
+  width: min(60rem, 1rem + 80vw);
+  margin-inline: auto;
 }
 
 h1{
@@ -58,8 +60,10 @@ body {
     /* min-width: 300px; */
   }
 
-  .subtitle{
+  .subtitle h3{
     margin-left: 10px;
+    margin-top: 3px;
+    text-align: center;
     font-family: Palatino Linotype;
   }
 
@@ -70,6 +74,7 @@ body {
     align-items: center;
     position: relative;
     text-decoration: none;
+    left: calc(30% - (100vmax - 92vw));
   }
 
   #birth::before{
@@ -144,4 +149,12 @@ body {
     margin-inline: auto;
     display: table;
     }
+}
+
+@media only screen and (max-width: 600px) {
+  .card {
+    left: 0%;
+  }
+
+
 }
