@@ -224,7 +224,7 @@ footer a:visited{
     margin-top: 5px;
     margin-inline: auto;
     display: table;
-    padding-left: 13vw !important;
+    padding-left: clamp(0.5vw, 13vw, 17vw) !important;
     }
 }
 
