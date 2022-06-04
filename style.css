@@ -210,7 +210,8 @@ footer a:visited{
 @media screen and (max-width: 440px) {
   .card {
     display: block;
-    margin-left: 5vw !important;
+    padding-left: 0px !important;
+
   }
 
   .circle-img{
@@ -223,17 +224,16 @@ footer a:visited{
     margin-top: 5px;
     margin-inline: auto;
     display: table;
+    padding-left: 13vw !important;
     }
 }
 
 @media screen and (max-width: 600px) {
   .card {
-    left: 0%;
-    margin-left: 15vw;
+    padding-left: 12vw;
+
     /* justify-content: unset; */
   }
-
-
 
 
 }
