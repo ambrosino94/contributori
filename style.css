@@ -79,12 +79,14 @@ background: linear-gradient(159.18deg, rgba(228, 228, 228, 0.1) -39.36%, #333333
 /* Test START Test START Test START Test START Test START Test START */
   .card{
     margin: 6% 0;
-    display: -webkit-box;
+    /* display: -webkit-box; */
+    display: flex;
+    justify-content: center;
     align-items: center;
     position: relative;
     text-decoration: none;
     /* left: calc(30% - (100vmax - 92vw)); */
-    left: 20%;
+    /* left: 20%; */
     /* margin-right: 20%; */
   }
 
@@ -112,6 +114,7 @@ background: linear-gradient(159.18deg, rgba(228, 228, 228, 0.1) -39.36%, #333333
 
   figcaption{
     padding-left: 15px;
+    min-width:400px;
   }
 
   .card-info{
@@ -183,7 +186,7 @@ dl{
 }
 
 footer a:link{
-  text-decoration: none;
+  text-decoration: none !important;
   /* color */
 }
 footer dd{
@@ -191,7 +194,7 @@ footer dd{
 
 }
 footer a:visited{
-  text-decoration: none;
+  text-decoration: none !important;
   color:#000000;
 }
 
@@ -214,6 +217,7 @@ footer a:visited{
     margin-inline: auto;
   }
 
+
   figcaption {
     margin-top: 5px;
     margin-inline: auto;
@@ -224,6 +228,7 @@ footer a:visited{
 @media screen and (max-width: 600px) {
   .card {
     left: 0%;
+    justify-content: unset;
   }
 
 
