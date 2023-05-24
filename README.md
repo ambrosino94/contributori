@@ -40,6 +40,4 @@ You can access the Contributori landing page at [Contributori](https://contribut
 
 <!-- Thank you for visiting the Contributori landing page and immersing yourself in the beauty and stories behind this remarkable replica monument! -->
 
-You can access the Contributori landing page at [Contributori Website](https://example.com).
-
 ###### A94
